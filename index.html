@@ -1,0 +1,231 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>LIVRARIA DA GABI</title>
+    <style>
+        body {
+            font-family: Arial, sans-serif;
+            background-color: #000;
+            color: #fff;
+            margin: 0;
+            padding: 0;
+        }
+        header {
+            background-color: #000;
+            padding: 20px 0;
+            text-align: center;
+            color: #fff;
+            font-size: 36px;
+            border-bottom: 1px solid #fff;
+        }
+        .container {
+            max-width: 1200px;
+            margin: 0 auto;
+            padding: 20px;
+        }
+        .bookshelf {
+            display: grid;
+            grid-template-columns: repeat(auto-fill, minmax(200px, 1fr));
+            gap: 20px;
+            list-style: none;
+            padding: 0;
+        }
+        .book {
+            background-color: #333;
+            padding: 20px;
+            border-radius: 5px;
+            text-align: center;
+            transition: transform 0.3s;
+        }
+        .book:hover {
+            transform: translateY(-5px);
+        }
+        .book h3 {
+            margin-top: 10px;
+            font-size: 18px;
+        }
+        .book img {
+            max-width: 100%;
+            height: auto;
+            border-radius: 5px;
+            margin-bottom: 10px;
+        }
+        .book a {
+            color: #fff;
+            text-decoration: none;
+            display: block;
+            margin-top: 10px;
+            padding: 8px 16px;
+            border: 2px solid #fff;
+            border-radius: 5px;
+            transition: background-color 0.3s, border-color 0.3s;
+        }
+        .book a:hover {
+            background-color: #fff;
+            color: #000;
+        }
+        .formato-btn {
+            margin-top: 10px;
+            display: inline-block;
+            padding: 10px 20px;
+            background-color: transparent;
+            color: white;
+            border: 2px solid white;
+            border-radius: 5px;
+            cursor: pointer;
+            transition: background-color 0.3s, border-color 0.3s, color 0.3s;
+            margin-right: 10px;
+        }
+        .formato-btn.selected, .formato-btn:hover {
+            background-color: #fff;
+            color: #000;
+            border-color: #fff;
+        }
+        .solicitar-btn {
+            padding: 10px 20px;
+            background-color: transparent;
+            color: white;
+            border: 2px solid white;
+            border-radius: 5px;
+            cursor: pointer;
+            transition: background-color 0.3s, border-color 0.3s, color 0.3s;
+            margin-top: 20px;
+            display: block;
+            margin-left: auto;
+            margin-right: auto;
+        }
+        .solicitar-btn:hover {
+            background-color: #fff;
+            color: #000;
+        }
+        #nomeLivro {
+            margin-top: 10px;
+            display: block;
+            margin-left: auto;
+            margin-right: auto;
+        }
+    </style>
+</head>
+<body>
+    <header>
+        LIVRARIA DA GABI
+    </header>
+    <div class="container">
+        <ul class="bookshelf">
+            <!-- Existing books with images -->
+            <!-- Book 1 -->
+            <li class="book">
+                <img src="texto cruéis demais para serem lido rapidamente.png" alt="Texto cruéis demais para serem lidos rapidamente onde dorme o amor">
+                <h3>Textos cruéis demais para serem lidos rapidamente onde dorme o amor</h3>
+                <a href="https://www.mediafire.com/file/hyyab99kfxkucwn/textos-crueis-demais-para-serem-lidos-rapidamente-onde-dorme-o-amor_compress.epub/file" download>Download</a>
+            </li>
+            <!-- Book 2 -->
+            <li class="book">
+                <img src="como eu era antes de você.png" alt="Como eu era antes de você">
+                <h3>Como eu era antes de você</h3>
+                <a href="https://www.mediafire.com/file/uh92csvmvkz2qs2/1._Como_Eu_Era_Antes_de_Voc%25C3%25AA_-_Jojo_Moyes.epub/file" download>Download</a>
+            </li>
+            <!-- Book 3 -->
+            <li class="book">
+                <img src="todas as suas imperfeições.png" alt="Todas as suas (im)perfeições">
+                <h3>Todas as suas (im)perfeições</h3>
+                <a href="https://www.mediafire.com/file/ov932sdv5tzbxwx/Todas-as-Suas-Imperfei%25C3%25A7%25C3%25B5es-de-Colleen-Hoover.epub/file" download>Download</a>
+            </li>
+            <!-- Book 4 -->
+            <li class="book">
+                <img src="diários de uma paixão.png" alt="Diário de Uma Paixão">
+                <h3>Diário de Uma Paixão</h3>
+                <a href="https://www.mediafire.com/file/jsduoiqounz0jdw/O-Diario-da-Nossa-Paixao-Nicholas-Sparks.epub/file" download>Download</a>
+            </li>
+            <!-- Book 5 -->
+            <li class="book">
+                <img src="continência ao amor.png" alt="Continência ao amor">
+                <h3>Continência ao amor</h3>
+                <a href="https://www.mediafire.com/file/l9hptz3cmvs4u4p/ContinenciaAoAmor.epub/file" download>Download</a>
+            </li>
+            <!-- Book 6 -->
+            <li class="book">
+                <img src="através da minha janela.png" alt="Através da minha janela">
+                <h3>Através da minha janela</h3>
+                <a href="https://www.mediafire.com/file/8owakmorgkspstu/Atraves-da-Minha-Janela.epub/file" download>Download</a>
+            </li>
+            <!-- Book 7 -->
+            <li class="book">
+                <img src="culpa minha.png" alt="Culpa minha">
+                <h3>Culpa minha</h3>
+                <a href="https://www.mediafire.com/file/k92v646pcby6mwe/Culpa-Minha-Mercedes-Ron.epub/file" download>Download</a>
+            </li>
+            <!-- Book 8 -->
+            <li class="book">
+                <img src="por lugares incríveis.png" alt="Por Lugares Incríveis">
+                <h3>Por Lugares Incríveis</h3>
+                <a href="https://www.mediafire.com/file/lbk24okw9p9e620/por_lugares_incriveis_-_jennifer_niven.epub/file" download>Download</a>
+            </li>
+            <!-- Book 9 -->
+            <li class="book">
+                <img src="a cinco passos de você.png" alt="A 5 passos de você">
+                <h3>A 5 passos de você</h3>
+                <a href="https://www.mediafire.com/file/2bhds9mqxdnx42j/A-Cinco-Passos-de-Voce.epub/file" download>Download</a>
+            </li>
+            <!-- Book 10 -->
+            <li class="book">
+                <img src="amor de redenção.png" alt="Amor de redenção">
+                <h3>Amor de redenção</h3>
+                <a href="https://www.mediafire.com/file/xkvjfha2xmycues/No-caminho-do-amor-de-redencao-Francine-Rivers.epub/file" download>Download</a>
+            </li>
+            <!-- New books with images -->
+            <!-- Book 11 -->
+            <li class="book">
+                <img src="me chama pelo seu nome.png" alt="Me Chame Pelo Seu Nome">
+                <h3>Me Chame Pelo Seu Nome</h3>
+                <a href="https://www.mediafire.com/file/ye358wzetjnbpi7/Me-Chame-Pelo-Seu-Nome-Andr%25C3%25A9-Aciman.epub/file" download>Download</a>
+            </li>
+            <!-- Book 12 -->
+            <li class="book">
+                <img src="aconteceu naquele verão.png" alt="Aconteceu Naquele Verão">
+                <h3>Aconteceu Naquele Verão</h3>
+                <a href="https://www.mediafire.com/file/eze8h3fk75qi7pu/1oCap_ABR22-AconteceuNaqueleVerao-2.epub/file" download>Download</a>
+            </li>
+        </ul>
+    </div>
+    
+    <div class="container" style="text-align: center;">
+        <h2>Solicitar Novo Livro</h2>
+        <label for="nomeLivro">Qual é o nome do livro que você deseja?</label>
+        <input type="text" id="nomeLivro" name="nomeLivro">
+        
+        <button class="formato-btn" onclick="selecionarFormato('PDF')">PDF</button>
+        <button class="formato-btn" onclick="selecionarFormato('EPUB')">EPUB</button>
+        
+        <button class="solicitar-btn" onclick="solicitarLivro()">Solicitar</button>
+    </div>
+    
+    <script>
+        let formatoSelecionado = '';
+        
+        // Função para selecionar o formato do livro
+        function selecionarFormato(formato) {
+            formatoSelecionado = formato;
+            // Remover a classe 'selected' de todos os botões
+            const formatoBtns = document.querySelectorAll('.formato-btn');
+            formatoBtns.forEach(btn => {
+                btn.classList.remove('selected');
+            });
+            // Adicionar a classe 'selected' apenas ao botão clicado
+            event.target.classList.add('selected');
+        }
+        
+        // Função para solicitar um livro
+        function solicitarLivro() {
+            const nomeLivro = document.getElementById('nomeLivro').value;
+            if (nomeLivro && formatoSelecionado) {
+                const mensagem = `Olá! Gostaria de solicitar o livro "${nomeLivro}" no formato ${formatoSelecionado}.`;
+                // Enviar a mensagem para o número via WhatsApp
+                window.location.href = "https://wa.me/5567993000870?text=" + encodeURIComponent(mensagem);
+            }
+        }
+    </script>
+</body>
+</html>
